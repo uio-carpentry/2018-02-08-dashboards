@@ -192,6 +192,9 @@ The learning objectives for the workshop are:
 - Understand what we mean by making your research more reproducible
 - Understand the value of reproducible research practices
 - Learn how to make your research more reproducible using Jupyter dashboards
+- Learn how to install jupyter Dashboards layout extension and create jupyter dashboards
+- Learn how to add interactivity to jupyter notebooks and allow end user to control aspects of the visualization
+- Learn how to share and publish your dashboard
 
 No prior knowledge of jupyter dashboards or jupyter notebooks is required. 
 
