@@ -311,6 +311,13 @@ The workshop is aimed at graduate students, postdocs and other researchers who p
 
   In addition, you will need an up-to-date web browser.
 </p>
+
+<h2 id="syllabus">Syllabus</h2>
+<p>
+  The lesson used for this workshop can be found <a href="https://annefou.github.io/jupyter_dashboards/">here</a>. 
+
+</p>
+
 {% comment %}
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
