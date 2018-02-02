@@ -1,8 +1,8 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "Carpentry@UiO workshop: Interactive Research with Jupyter Dashboards"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Bikuben Nucleus 1, Kristine Bonnevies hus, University of Oslo, Oslo, Norway"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+venue: "Reproducible Research with Interactive Jupyter Dashboards"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Group room 7, Georg Sverdrups House, University of Oslo, Oslo, Norway"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "no"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "59.9381684,10.7217819"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
@@ -11,7 +11,6 @@ humantime: "9:00 am - 4:00 pm"    # human-readable times for the workshop (e.g.,
 startdate: 2018-02-08      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2018-02-08        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Ana Costa", "Gladys Nalvarte", "Benjamin Ragan-Kelley", "Anne Fouilloux"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["contact-us@swcarpentry.uio.no"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: http://pad.software-carpentry.org/2018-02-08-dashboards            # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -140,7 +139,6 @@ hands-on workshop will introduce you to Jupyter dashboards for reproducible rese
 
   Modify the block below if there are any barriers to accessibility or
   special instructions.
-{% endcomment %}
 <p id="accessibility">
   <strong>Accessibility:</strong> We are committed to making this workshop
   accessible to everybody.
@@ -158,6 +156,7 @@ hands-on workshop will introduce you to Jupyter dashboards for reproducible rese
   get in touch (using contact details below) and we will
   attempt to provide them.
 </p>
+{% endcomment %}
 
 {% comment %}
   CONTACT EMAIL ADDRESS
@@ -193,7 +192,6 @@ The learning objectives for the workshop are:
 - Understand the value of reproducible research practices
 - Learn how to make your research more reproducible using Jupyter dashboards layout extension (an add-on for Jupyter notebook)
 - Learn how to arrange your jupyter notebook outputs (text, plots, widgets, ...) in grid- or report- like layouts
-- Learn how to install jupyter Dashboards layout extension and create jupyter dashboards
 - Learn how to add interactivity to jupyter notebooks and allow end user to control aspects of the visualization
 - Learn how to share and publish your dashboard
 
@@ -309,16 +307,19 @@ The workshop is aimed at graduate students, postdocs and other researchers who p
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to the software described below.
+  you will need access to the software described <a href="https://annefou.github.io/jupyter_dashboards/setup.html">here</a>. 
+
   In addition, you will need an up-to-date web browser.
 </p>
+{% comment %}
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+{% endcomment %}
 
-<div id="shell"> {% comment %} Start of 'shell' section. {% endcomment %}
+<div id="shell"> {% comment %} Start of 'shell' section. 
   <h3>The Bash Shell</h3>
 
   <p>
@@ -406,9 +407,9 @@ The workshop is aimed at graduate students, postdocs and other researchers who p
       </p>
     </div>
   </div>
-</div> {% comment %} End of 'shell' section. {% endcomment %}
+</div> End of 'shell' section. {% endcomment %}
 
-<div id="editor"> {% comment %} Start of 'editor' section. {% endcomment %}
+<div id="editor"> {% comment %} Start of 'editor' section. 
   <h3>Text Editor</h3>
 
   <p>
@@ -478,12 +479,12 @@ The workshop is aimed at graduate students, postdocs and other researchers who p
       </p>
     </div>
   </div>
-</div> {% comment %} End of 'editor' section. {% endcomment %}
+</div> End of 'editor' section. {% endcomment %}
 
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the Jupyter notebook.
-           Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility {% endcomment %}
+           Details at https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#browser-compatibility 
   <h3>Python</h3>
 
   <p>
@@ -497,8 +498,7 @@ The workshop is aimed at graduate students, postdocs and other researchers who p
 
     <p>
       Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.6 is fine).
+      <strong>please make sure you install Python version 3.6</strong>.
     </p>
 
     <p>
@@ -564,14 +564,12 @@ The workshop is aimed at graduate students, postdocs and other researchers who p
       </ol>
     </div>
   </div>
-{% comment %}
   <p>
   Once you are done installing the software listed above,
   please go to <a href="setup/index.html">this page</a>,
   which has instructions on how to test that everything was installed correctly.
   </p>
-{% endcomment %}
-</div> {% comment %} End of 'Python' section. {% endcomment %}
+</div> End of 'Python' section. {% endcomment %}
 
 {% comment %}
 <div id="vm">
